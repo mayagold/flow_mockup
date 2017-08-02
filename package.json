@@ -1,0 +1,26 @@
+{
+  "name": "flow_mockup",
+  "version": "1.0.0",
+  "description": "GA Unit 2 Assignment: create online store mockup using MongoDB and node modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayagold/flow_mockup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayagold/flow_mockup/issues"
+  },
+  "homepage": "https://github.com/mayagold/flow_mockup#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.5"
+  }
+}

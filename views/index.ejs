@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<!-- meta -->
+  <head>
+    <meta charset="utf-8">
+<!-- css and js links -->
+    <link rel="stylesheet" href="/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/app.js"></script>
+<!-- title -->
+    <title>flow.hack | Home</title>
+  </head>
+  <body>
+<!-- header for every page -->
+    <div class="heading">
+      <hr>
+      <a href="/products"><h1 class="header">flow.hack</h1></a>
+      <h2>snowboards that push past the edge of design</h2>
+      <a href="/products" class="nav">Choose Your Board</a> <span class="nav"> | </span>
+      <a href="/products/new" class="nav">Submit New Board</a>
+      <hr>
+    </div>
+<!-- for loop renders each product model as li -->
+    <div class="flexcontainer">
+      <ul>
+        <% for (let i=0; i<product.length; i++) { %>
+          <li>
+            <a href="/products/<%=product[i].id%>">
+            <img class="indexImg" src="<%=product[i].img%>" alt="<%= product[i].name; %>"></img></a><br/>
+            <div class="product-content">
+              <%= product[i].name; %><br/><br/>
+              <div class="description">
+                <%= product[i].description; %><br/>
+              </div>
+              Price: $<%= product[i].price; %><br/>
+              In Stock: <%= product[i].qty; %><br/>
+            </div>
+          </li>
+        <% } %>
+      </ul>
+    </div>
+<!-- modal: about -->
+    <div class="overlay" id="about-modal">
+      <div class="modal-textbox">
+        <h3>about</h3>
+        <br/><br/><br/><p>do it for the love of pow!</p>
+      </div>
+    </div>
+<!-- modal: contact info -->
+    <div class="overlay" id="contact-modal">
+      <div class="modal-textbox">
+        <h3>contact</h3>
+        <br/><br/><br/><p>find me on <a href="https://github.com/mayagold" id="github">github</a> animals</p>
+      </div>
+    </div>
+<!-- footer -->
+    <footer>
+      <hr>
+      <a href="#" class="nav" id="contact-link">Contact</a> <span class="nav"> | </span>
+      <a href="#" class="nav" id="about-link">About</a>
+      <hr>
+    </footer>
+  </body>
+</html>

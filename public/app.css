@@ -1,0 +1,206 @@
+body {
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  margin: 0
+}
+
+.indexImg:hover {
+  border: 2px solid crimson;
+}
+
+.product-content {
+  width: 300px;
+}
+
+.page-header {
+  padding: 40px;
+}
+
+.heading {
+  background-color: black;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  font-size: 100px;
+  font-weight: 900;
+  margin-bottom: 0;
+  color: white;
+  margin-top: 10px
+}
+
+.nav {
+  color: white;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-decoration: overline;
+  padding-top: 5px;
+  line-height: 40px;
+  color: white;
+}
+
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  display: inline-flex;
+  width: 300px;
+  height:500px;
+  margin: 20px;
+  flex-wrap: wrap;
+  /*padding: 20px;*/
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+}
+
+.info {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+.description {
+  display: none;
+}
+
+img {
+  max-width: 292px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: dimgrey;
+}
+
+button {
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  padding: 5px;
+  background: white;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  color: crimson;
+}
+
+.submit {
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  background: white;
+  font-size: 20px;
+  margin: 8px;
+  font-weight: bold;
+}
+
+.submit:hover {
+  color: crimson;
+}
+
+form {
+  display: block;
+  margin: 0 auto;
+}
+
+input {
+  background-color: gainsboro;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px;
+  margin: 8px;
+  padding: 3px;
+}
+
+footer {
+  background: black;
+  margin-bottom: 0;
+  margin-top: 40px;
+  height: 30px;
+  color: white;
+  padding-bottom: 40px;
+  padding-top: 15px;
+}
+
+.overlay {
+  color: black;
+  background-color: rgba(0,0,0,.8);
+  position: fixed;
+  overflow: auto !important;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  height:100%;
+  text-align:center;
+  z-index: 1000;
+}
+
+.modal-textbox {
+  margin-top: 15%;
+  margin-left: 30%;
+  border: 2px solid crimson;
+  color: white;
+  background: black;
+  height: 40%;
+  width: 40%;
+}
+
+#about-modal {
+  display: none;
+}
+
+#contact-modal {
+  display: none;
+}
+
+p {
+  font-size: 12px;
+}
+
+#github {
+  color: crimson;
+  padding: 1px;
+  font-size: 14px;
+}
+
+.github {
+  color: white;
+  padding: 1px;
+  font-size: 12px;
+}
+
+.github:hover {
+  color: dimgrey;
+}
